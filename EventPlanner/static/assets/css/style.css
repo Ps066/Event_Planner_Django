@@ -1,0 +1,154 @@
+:root{
+    --bright-green: #009970;
+    --bright-blue: #01b0f8;
+  }
+
+
+
+*{
+    font-weight: 600;
+}
+
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    color: var(--bright-blue) !important;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button{
+    background-color: var(--bright-blue);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    /* margin-inline: 5px; */
+}
+.login-button:hover{
+    background-color: var(--bright-blue);
+}
+
+.navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus , .btn-close:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight:500;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link:active {
+    color: #000;
+}
+
+@media (min-width : 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--bright-blue);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before , .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section{
+    background: url(../../1520116210368.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-section::before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80vh;
+    
+}
+
+
+.hero-section .container {
+    height: 80vh;
+    z-index: 1;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 1.5em;
+}
+.hero-section h2 {
+    font-size: 1.2em;
+}
+
+.grid-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    z-index: 2;
+}
+.btn-fixed-size {
+    min-width: 150px; /* You can adjust the width as per your requirement */
+    background-color: var(--bright-blue) !important;
+    color: white !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+.btn-fixed-size:hover {
+    color: var(--bright-blue) !important;
+    background-color: white !important;
+ 
+}
+
+.btn.btn-secondary:focus,
+    .btn.btn-secondary.focus {
+        box-shadow: none !important;
+    }
+    
+    .dropdown-toggle:focus,
+    .dropdown-toggle.focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+.head-2{
+    margin-block: 50px;
+    margin-inline: 100px;
+}
+
+.feat-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}

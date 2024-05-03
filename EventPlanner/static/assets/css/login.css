@@ -1,0 +1,10 @@
+:root{
+    --bright-green: #009970;
+    --bright-blue: #01b0f8;
+  }
+
+
+#main-btn{
+    background-color: var(--bright-blue) !important;
+    border: none !important;
+}
